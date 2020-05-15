@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const port = 8000;
 
+//inclde mongoose file
+const db = require('./config/mongoose');
+
 // use for adding layout which installed by npm install express-ejs-layouts
 const expresslayouts = require('express-ejs-layouts');
 app.use(expresslayouts);

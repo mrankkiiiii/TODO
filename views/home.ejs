@@ -1,3 +1,45 @@
+<script src="https://kit.fontawesome.com/de71e220d0.js" crossorigin="anonymous"></script>
 
-    <h1> Codeial / <%= title%></h1>
- 
+<div id="todo">
+	<div id="heading">
+		<h1>TODO App</h1>
+		</div>
+	
+	<div>
+		 <form action="/create_event" method="POST">
+      <div id="decription">
+        <label for="description">Description</label>
+            <input type="text" name="description" placeholder="What do you need to do ?" id="description" required>
+        </div>
+			 <div id="category">
+        <label for="category">Category</label>
+            <select name="category" id="category">
+                <option value="-1">Choose a category</option>
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="School">School</option>
+                <option value="Cleaning">Cleaning</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+			 <div id="date">
+            <label for="date">Due Date</label>
+                <input type="date" name="date" placeholder="Enter number" id="date" required>
+        </div>
+			 <div class=button>
+				 <button type="submit" class="submit-button"><i class="fas fa-plus"></i>Add Task</button>
+			
+           
+                 <a href=" " class="delete-button">
+                    <i class="far fa-trash-alt"></i>Delete Task
+                   </a>
+			 </div>
+                 </form>
+                 
+                 <label class="container">One
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                  </label>
+		</div>
+</div>
+

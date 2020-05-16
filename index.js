@@ -5,16 +5,9 @@ const port = 8000;
 //include mongoose file
 const db = require('./config/mongoose');
 
-const Event = require('./models/events');
-
-// it is used fo pass the form data
-app.use(express.urlencoded());
 // use for adding layout which installed by npm install express-ejs-layouts
 const expresslayouts = require('express-ejs-layouts');
 app.use(expresslayouts);
-
-//for static css
-app.use(express.static('./assets'));
 
 // this is used to add separate css and js files for different pages
 app.set('layout extractStyles', true);
@@ -26,6 +19,9 @@ app.use('/', require('./routes'));
 // set up the view engine after installing the ejs
 app.set('view engine', 'ejs');
 app.set('views','./views')
+
+//for static css
+app.use(express.static('./assets'));
 
 app.listen(port,function(err){
     if(err){

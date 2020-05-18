@@ -1,93 +1,138 @@
 body{
+	margin-top: 30px;
 	background-color: grey;
 }
+body i{
+	padding-right: 10px;
+}
+
+/* common class for padding and bottom border */
+
+.brdr{
+	border-radius: 5px;
+	padding: 2px 0px 0px 15px;
+	border-bottom: 1px solid grey;
+	height: 57px;
+
+}
+/* This is the main todo Section */
 #todo{
-	height: 500px;
-	width :500px;
+	width :600px;
 	background-color: white;
 	margin:auto;
 	border-radius:10px;
+	box-shadow: 0px 0px 12px 10px darkgray;
+	border: 1px solid firebrick;
 }
+
+/* Main heading of the todo  */
 #heading{
-	color: grey;
+	color: white;
 	text-align: center;
 	border-bottom: 1px solid grey;
-	opacity: 0.7;
+	opacity: 0.8;
+	background-color: red;
+	border-radius: 8px;
 }
-#decription{
-	display: block;
-	padding: 2px 0px 20px 15px;
-	border-bottom: 1px solid grey;
-	opacity: 0.7;
+#heading h1{
+	margin-top: 0;
+	padding-top: 10px;
+	height: 30px;
 }
-#decription input{
+
+/* Description Section */
+.decription {
+    display: block;
+    opacity: 0.7;
+}
+.decription input{
 	border: none;
-	width:100%;
+	width:99.7%;
 	font-weight: 600;
 	opacity: 0.5;
 }
-#category{
-	width:50%;
-	padding: 2px 0px 10px 15px;
-	border-bottom: 1px solid grey;
-	display: inline-block;
-	border-right: 1px solid grey;
-}
-#category select{
-	border: 0px solid;
-	width:100%;
-	font-weight: 550;
-	opacity: 0.2;
-	background-color: transparent;
-}
-#date{
-	padding: 2px 0px 11px 15px;
-	display: inline-block;
-	position: absolute;
+
+/* Category Section */
+.category{
 	width: 50%;
-	border-bottom: 1px solid grey;
+    display: inline-block;
+    border-right: 1px solid grey;
 }
-#date input{
+.category select{
+	border: 0px solid;
+	width: 100%;
 	font-weight: 550;
-	opacity: 0.2;
+	opacity: 0.3;
+	height: 24px;
+	position: relative;
+	padding-left: 0;
+}
+
+/* Date Section */
+.date{
+    display: inline-block;
+    position: absolute;
+    width: 270px;
+}
+.date input{
+	font-weight: 900;
+	opacity: 0.4;
 	border: 0px solid;
 	display: block;
 	position: relative;
 	padding-left: 0px;
-	
+	height: 20px;	
 }
-.button{
-	display: flex;
-	justify-content: center;
+
+/* Add and Delete Button Section */
+.submit-button-div{
 	padding: 20px;
 	border-bottom: 1px solid grey;
 }
-.button i{
-	padding-right: 10px;
-}
-.button button,a{
+
+.btn{
 	padding : 10px;
+	cursor: pointer;
+	position: relative;
 	border: none;
 	color:white;
 	font-size:1rem;
+	width: 130px;
+	border-radius: 5px;
 }
+
 .submit-button{
 	background-color: green;
-	margin-right:10px;
-	cursor: pointer;
+	left: 25%;
 }
 .submit-button:hover{
 	background-color: darkgreen;
 }
 
 .delete-button{
-	text-decoration: none;
 	background-color: orangered;
+    bottom: 431px;
+    left: 55%;
 }
 .delete-button:hover{
 	background-color: red;
 }
 
+/* Events section */
+.events-list{
+	overflow-y: scroll;
+	padding: 0px 20px 15px 15px;
+	margin-top: 0px;
+	height: 340px;
+}
+ .events-list .date-display{
+    display: inline-block;
+    position: absolute;
+    width: 130px;
+	top: 35px;
+	opacity: 0.5;
+	font-weight: bold;
+}
 
 
 
@@ -96,23 +141,36 @@ body{
 /* Css For check boxes */
 /* The container */
 .container {
-	display: block;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
 	position: relative;
-	padding-left: 35px;
-	margin-bottom: 12px;
+	padding-left: 40px;
 	cursor: pointer;
-	font-size: 22px;
 	-webkit-user-select: none;
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	padding-bottom: 20px;
+	border-bottom: 1px solid grey;
   }
-  
+
+.container .category-tab{
+	position: absolute;
+	left: 75%;
+	padding: 10px;
+	width: 85px;
+	font-size: 1.3rem;
+	text-align: center;
+	border-radius: 5px;
+}
   /* Hide the browser's default checkbox */
   .container input {
 	position: absolute;
 	opacity: 0;
 	cursor: pointer;
+	left: 0;
+	top: 26px;
 	height: 0;
 	width: 0;
   }
@@ -120,11 +178,12 @@ body{
   /* Create a custom checkbox */
   .checkmark {
 	position: absolute;
-	top: 0;
+	top: 26px;
 	left: 0;
 	height: 25px;
 	width: 25px;
 	background-color: #eee;
+	border-radius: 5px;
   }
   
   /* On mouse-over, add a grey background color */

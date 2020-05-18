@@ -2,44 +2,56 @@
 
 <div id="todo">
 	<div id="heading">
-		<h1>TODO App</h1>
-		</div>
-	
-	<div>
-		 <form action="/create_event" method="POST">
-      <div id="decription">
-        <label for="description">Description</label>
-            <input type="text" name="description" placeholder="What do you need to do ?" id="description" required>
-        </div>
-			 <div id="category">
-        <label for="category">Category</label>
-            <select name="category" id="category">
-                <option value="-1">Choose a category</option>
-                <option value="Personal">Personal</option>
-                <option value="Work">Work</option>
-                <option value="School">School</option>
-                <option value="Cleaning">Cleaning</option>
-                <option value="Other">Other</option>
-            </select>
-        </div>
-			 <div id="date">
-            <label for="date">Due Date</label>
-                <input type="date" name="date" placeholder="Enter number" id="date" required>
-        </div>
-			 <div class=button>
-				 <button type="submit" class="submit-button"><i class="fas fa-plus"></i>Add Task</button>
-			
-           
-                 <a href=" " class="delete-button">
-                    <i class="far fa-trash-alt"></i>Delete Task
-                   </a>
-			 </div>
-                 </form>
-                 
-                 <label class="container">One
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-		</div>
-</div>
+		<h1><i class="far fa-calendar-check"></i>TODO LIST</h1>
+    </div>
+            <!-- Input Form for events field -->
+		 <form>
+                <label class="decription brdr">
+                    <label for="description">DESCRIPTION</label>
+                        <input type="text" name="description" placeholder="What do you need to do ?" id="description" required>
+                </label>
+                <!-- Category Selection -->
+                <div class="category brdr">
+                    <label for="category">CATEGORY</label>
+                        <select name="category" required>
+                                <option value="">Choose a category</option>
+                                <option value="Personal">Personal</option>
+                                <option value="Work">Work</option>
+                                <option value="School">School</option>
+                                <option value="Meeting">Meeting</option>
+                                <option value="Other">Other</option>
+                        </select>
+                    </div>
+                <!-- Date Input -->
+                <div class="date brdr">
+                    <label for="date">DUE DATE</label>
+                        <input type="date" name="date" placeholder="Enter number" id="date" required>
+                </div>
 
+                <div class=submit-button-div>
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn submit-button" formaction="/create-event" formmethod="POST">
+                        <i class="fas fa-plus"></i>Add Task</button>
+                </div>
+         </form>
+         
+             <!-- Events Section -->
+             <form action='/delete-contact' method='post'>
+                    <!-- Events List -->
+                    <ul class="events-list">
+                        <% for(let i of event_List) {%>
+                            <label class="container">
+                                <h3><%=i.description%></h3>
+                                <p class="date-display"><i class="far fa-calendar-alt"></i><%= i.date%></p>
+                                <p class="category-tab"><%= i.category%></p>
+                                <input type="checkbox" value="<%= i.id %>"  name="check">
+                                <span class="checkmark"></span>
+                            </label>
+                        <% }%>
+                    </ul>
+                    <!-- Delete Button -->
+                    <button type="submit" class="btn delete-button">
+                        <i class="far fa-trash-alt"></i>Delete
+                    </button>
+            </form>
+</div>

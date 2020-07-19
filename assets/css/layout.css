@@ -1,4 +1,6 @@
 body{
+	font-weight: 900;
+	letter-spacing: 0.1rem;
 	margin-top: 30px;
 	background-color: grey;
 }
@@ -13,8 +15,15 @@ body i{
 	padding: 2px 0px 0px 15px;
 	border-bottom: 1px solid grey;
 	height: 57px;
-
 }
+/* Todo Later */
+/* .description:hover,.category:hover,.date:hover{
+	background-color: lightgray;
+}
+.description input:hover,.category:hover,.date input:hover{
+	background-color: lightgray;
+} */
+
 /* This is the main todo Section */
 #todo{
 	width :600px;
@@ -41,28 +50,29 @@ body i{
 }
 
 /* Description Section */
-.decription {
-    display: block;
-    opacity: 0.7;
+.description {
+	display: block;
+    opacity: 0.8;
 }
-.decription input{
+.description input{
 	border: none;
 	width:99.7%;
 	font-weight: 600;
-	opacity: 0.5;
+	opacity: 0.7;
 }
 
 /* Category Section */
 .category{
 	width: 50%;
-    display: inline-block;
+	display: inline-block;
+	opacity: 0.8;
     border-right: 1px solid grey;
 }
 .category select{
 	border: 0px solid;
 	width: 100%;
 	font-weight: 550;
-	opacity: 0.3;
+	opacity: 0.6;
 	height: 24px;
 	position: relative;
 	padding-left: 0;
@@ -71,12 +81,13 @@ body i{
 /* Date Section */
 .date{
     display: inline-block;
-    position: absolute;
+	position: absolute;
+	opacity: 0.8;
     width: 270px;
 }
 .date input{
 	font-weight: 900;
-	opacity: 0.4;
+	opacity: 0.7;
 	border: 0px solid;
 	display: block;
 	position: relative;
@@ -93,7 +104,6 @@ body i{
 .btn{
 	padding : 10px;
 	cursor: pointer;
-	position: relative;
 	border: none;
 	color:white;
 	font-size:1rem;
@@ -102,17 +112,19 @@ body i{
 }
 
 .submit-button{
+	position: relative;
 	background-color: green;
-	left: 25%;
+	left: 23%;
 }
 .submit-button:hover{
 	background-color: darkgreen;
 }
 
 .delete-button{
+	position: absolute;
 	background-color: orangered;
-    bottom: 431px;
-    left: 55%;
+    top: 233px;
+    left: 50%;
 }
 .delete-button:hover{
 	background-color: red;
@@ -123,14 +135,14 @@ body i{
 	overflow-y: scroll;
 	padding: 0px 20px 15px 15px;
 	margin-top: 0px;
-	height: 340px;
+	max-height: 475px;
 }
  .events-list .date-display{
     display: inline-block;
     position: absolute;
     width: 130px;
 	top: 35px;
-	opacity: 0.5;
+	opacity: 0.7;
 	font-weight: bold;
 }
 
@@ -151,6 +163,7 @@ body i{
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+	overflow: hidden;
 	padding-bottom: 20px;
 	border-bottom: 1px solid grey;
   }
@@ -161,8 +174,14 @@ body i{
 	padding: 10px;
 	width: 85px;
 	font-size: 1.3rem;
+	font-weight: 100;
 	text-align: center;
 	border-radius: 5px;
+}
+.container h3{
+	opacity: 0.8;
+	max-width: 350px;
+	overflow: hidden;
 }
   /* Hide the browser's default checkbox */
   .container input {

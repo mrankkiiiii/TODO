@@ -1,5 +1,7 @@
+// require mongoose to connect 
 const mongoose= require('mongoose');
 
+// this sis the event schema of Todo App
 const eventSchema = new mongoose.Schema({
     description: {
         type: String,
@@ -16,4 +18,6 @@ const eventSchema = new mongoose.Schema({
 });
 
 const Event = mongoose.model('Event',eventSchema);
+
+// exports this schema 
 module.exports = Event;

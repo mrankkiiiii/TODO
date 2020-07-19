@@ -1,3 +1,4 @@
+// require to use ejs files
 const express = require('express');
 const app = express();
 const port = 8000;
@@ -23,6 +24,7 @@ app.set('views','./views')
 //for static css
 app.use(express.static('./assets'));
 
+// check the connection of server
 app.listen(port,function(err){
     if(err){
         console.log(`Error in running the server: ${err}`);

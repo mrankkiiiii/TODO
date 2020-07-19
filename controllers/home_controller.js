@@ -1,6 +1,7 @@
-
+// require the events db 
 const Event = require('../models/events');
 
+// controller for home 
 module.exports.home = function(req,res){
        Event.find({},function(err,event){
         if(err)
@@ -37,11 +38,13 @@ module.exports.delete_data = function(req,res){
     //get the id from the query in the URL
     let id = (req.body.check);
    
+    //if user has to delete only one event
     if(typeof(id)=='string'){
         Event.findByIdAndDelete(id,function(err){
-        
+                console.log(id);
         });
     }
+     //if user has to delete multiple events simultaneously
     else{
         for(i in id){
                 Event.findByIdAndDelete(id[i],function(err){

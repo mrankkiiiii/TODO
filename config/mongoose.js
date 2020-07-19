@@ -2,7 +2,7 @@
 const mongoose = require('mongoose');
 
 //connect to the databse
-mongoose.connect('mongodb://localhost/todo_development');
+mongoose.connect('mongodb://localhost/todo_development',{useCreateIndex: true, useNewUrlParser: true , useUnifiedTopology: true  });
 
 //acquire the connection to check it is successfull
 const db = mongoose.connection;

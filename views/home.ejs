@@ -1,3 +1,4 @@
+<!-- This is the fontawesome site's script link to add some icons on our page  -->
 <script src="https://kit.fontawesome.com/de71e220d0.js" crossorigin="anonymous"></script>
 
 <div id="todo">
@@ -5,8 +6,8 @@
 		<h1><i class="far fa-calendar-check"></i>TODO LIST</h1>
     </div>
             <!-- Input Form for events field -->
-		 <form>
-                <label class="decription brdr">
+		<form>
+                <label class="description brdr">
                     <label for="description">DESCRIPTION</label>
                         <input type="text" name="description" placeholder="What do you need to do ?" id="description" required>
                 </label>
@@ -31,12 +32,12 @@
                 <div class=submit-button-div>
                     <!-- Submit Button -->
                     <button type="submit" class="btn submit-button" formaction="/create-event" formmethod="POST">
-                        <i class="fas fa-plus"></i>Add Task</button>
+                        <i class="fas fa-plus"></i>ADD TASK</button>
                 </div>
-         </form>
+        </form>
          
              <!-- Events Section -->
-             <form action='/delete-contact' method='post'>
+            <form action='/delete-contact' method='post'>
                     <!-- Events List -->
                     <ul class="events-list">
                         <% for(let i of event_List) {%>
@@ -51,7 +52,7 @@
                     </ul>
                     <!-- Delete Button -->
                     <button type="submit" class="btn delete-button">
-                        <i class="far fa-trash-alt"></i>Delete
+                        <i class="far fa-trash-alt"></i>DELETE
                     </button>
             </form>
 </div>

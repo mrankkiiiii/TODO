@@ -5,15 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <%= title%></title>
     <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <!-- this is for external style -->
     <%- style %>
 </head>
 <body>
+    <!-- This include the headers section to the page -->
     <%- include('_header');%>
     
+    <!-- This include the body section to the page -->
         <%- body %>
 
+    <!-- This include the footer section to the page -->
     <%- include('_footer');%>
-    
+
+    <!-- this is for external script -->
     <%- script %>
     <script type="text/javascript" src="/js/script.js"></script>
 </body>

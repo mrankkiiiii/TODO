@@ -3,7 +3,7 @@ const express = require('express');
 const router = express.Router();
 
 // app.use is middleware which is used to passed the form data using express
-router.use(express.urlencoded());
+router.use(express.urlencoded({extended: false}));
 
 // it is used to connect with homecontroller
 const homeController = require('../controllers/home_controller');

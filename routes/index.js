@@ -8,14 +8,9 @@ router.use(express.urlencoded({extended: false}));
 // it is used to connect with homecontroller
 const homeController = require('../controllers/home_controller');
 
-// this is the route for home
 router.get('/', homeController.home);
-
-// this is the route for delete button
-router.post('/delete-contact',homeController.delete_data);
-
-// this is the route for addbutton
-router.post('/create-event',homeController.add_data);
+router.use('/user', require('./user'));
+router.use('/event', require('./event'));
 
 //exports the route for accessible in other sections
 module.exports = router;

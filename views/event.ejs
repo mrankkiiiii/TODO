@@ -31,13 +31,13 @@
 
                 <div class=submit-button-div>
                     <!-- Submit Button -->
-                    <button type="submit" class="btn submit-button" formaction="/create-event" formmethod="POST">
+                    <button type="submit" class="btn submit-button" formaction="/event/create-event" formmethod="POST">
                         <i class="fas fa-plus"></i>ADD TASK</button>
                 </div>
         </form>
          
              <!-- Events Section -->
-            <form action='/delete-contact' method='post'>
+            <form action='/event/delete-contact' method='post'>
                     <!-- Events List -->
                     <ul class="events-list">
                         <% for(let i of event_List) {%>

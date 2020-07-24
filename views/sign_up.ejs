@@ -1,6 +1,7 @@
-<form action="/user/create">
+<form action="/user/create" method="POST">
+    <input type="text" name="name" id="" placeholder="Enter name" required>
     <input type="email" name="email" id="" placeholder="example@mail.com" required>
     <input type="password" name="password" id="" placeholder="Enter Password" required>
-    <input type="text" name="name" id="" placeholder="Enter name" required>
+    <input type="password" name="confirm_password" id="" placeholder="Confirm Password" required>
     <input type="button" value="Sign Up">
 </form>

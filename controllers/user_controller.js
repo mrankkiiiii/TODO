@@ -9,3 +9,11 @@ module.exports.signup = function(req,res){
         title: "sign up"
     })
 }
+
+module.exports.create = function(req,res){
+   
+}
+
+module.exports.createSession = function(req,res){
+   
+}

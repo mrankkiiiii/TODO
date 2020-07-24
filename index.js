@@ -1,7 +1,11 @@
 // require to use ejs files
 const express = require('express');
+const cookieParser = require('cookie-parser');
 const app = express();
 const port = 8000;
+
+// app.use is middleware which is used to passed the form data using express
+router.use(express.urlencoded({extended: false}));
 
 //include mongoose file
 const db = require('./config/mongoose');

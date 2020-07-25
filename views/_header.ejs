@@ -1,5 +1,16 @@
 <header>
-   <a href="/user/sign-in">Sign In</a>
-   <a href="/user/sign-up">Sign Up</a>
-</header> 
+   <div id="logo">
+       <a href="/">Todo</a>
+   </div>
+   <div class="navigation">
+       <%if(locals.user){%>
+               <a href="/user/event/<%= user.id%>"><%=user.name%></a>
+               <a href="/user/sign-out">Sign Out</a>
 
+           <%} else {%>
+                   <a href="/user/sign-in">Sign In</a>
+                   <a href="/user/sign-up">Sign Up</a>
+           <%}%>
+   </div>
+
+</header>

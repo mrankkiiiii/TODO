@@ -41,3 +41,10 @@ module.exports.createSession = function(req,res){
     // req.flash('success', 'Logged in Successfully');
     return res.redirect('/event/');
 }
+
+// for the signout
+module.exports.destroySession = function(req,res){  
+    req.logout();
+    // req.flash('success', ' You have Logged out');
+    return res.redirect('/');
+}

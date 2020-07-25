@@ -1,7 +1,7 @@
 // require express to use ejs file
 const express = require('express');
 const router = express.Router();
-
+const passport = require('passport');
 // it is used to connect with homecontroller
 const homeController = require('../controllers/home_controller');
 

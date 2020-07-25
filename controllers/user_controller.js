@@ -1,11 +1,19 @@
 const User = require('../models/user');
 module.exports.signin = function(req,res){
+    if(req.isAuthenticated())
+    {
+        return res.redirect('/user/event');
+    }
     return res.render('sign_in',{
         title: "sign in"
     })
 }
 
 module.exports.signup = function(req,res){
+    if(req.isAuthenticated())
+    {
+        return res.redirect('/user/event');
+    }
     return res.render('sign_up',{
         title: "sign up"
     })

@@ -14,6 +14,7 @@ const db = require('./config/mongoose');
 const session =require('express-session');
 const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
+const MongoStore = require('connect-mongo')(session);
 
 // use for adding layout which installed by npm install express-ejs-layouts
 const expresslayouts = require('express-ejs-layouts');
@@ -33,7 +34,7 @@ app.use(express.static('./assets'));
 
 //mongo store is used to store the session cookie in the db
 app.use(session({
-    name: 'codeial',
+    name: 'todo',
     // Todo change the secret before deployment in production mode
     secret: 'blahblah',
     saveUninitialized: false,
@@ -41,14 +42,14 @@ app.use(session({
     cookie: {
         maxAge: (1000 * 60 *100)
     },
-    // store: new MongoStore({
-    //     mongooseConnection: db,
-    //     autoRemove: 'disabled'
-    // },
-    // function(err){
-    //     console.log(err ||' connect-mongodb setup ok');
-    // }
-    // )
+    store: new MongoStore({
+        mongooseConnection: db,
+        autoRemove: 'disabled'
+    },
+    function(err){
+        console.log(err ||' connect-mongodb setup ok');
+        }
+    )
 }));
 
 app.use(passport.initialize());

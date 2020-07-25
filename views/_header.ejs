@@ -4,7 +4,7 @@
    </div>
    <div class="navigation">
        <%if(locals.user){%>
-               <a href="/user/event/<%= user.id%>"><%=user.name%></a>
+               <a href="/user/profile/<%= user.id%>"><%=user.name%></a>
                <a href="/user/sign-out">Sign Out</a>
 
            <%} else {%>

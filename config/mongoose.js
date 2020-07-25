@@ -15,4 +15,4 @@ db.once('open',function(){
     console.log("Successfully connected with Database");
 
 });
-
+module.exports = db;

@@ -12,20 +12,20 @@ module.exports.profile = function(req , res){
 module.exports.signin = function(req,res){
     if(req.isAuthenticated())
     {
-        return res.redirect('/user/event');
+        return res.redirect('/event');
     }
     return res.render('sign_in',{
-        title: "sign in"
+        title: "Sign In"
     })
 }
 
 module.exports.signup = function(req,res){
     if(req.isAuthenticated())
     {
-        return res.redirect('/user/event');
+        return res.redirect('/event');
     }
     return res.render('sign_up',{
-        title: "sign up"
+        title: "Sign Up"
     })
 }
 
@@ -57,7 +57,7 @@ module.exports.create = function(req,res){
 
 module.exports.createSession = function(req,res){
     // req.flash('success', 'Logged in Successfully');
-    return res.redirect('/event/');
+    return res.redirect('/event');
 }
 
 // for the signout

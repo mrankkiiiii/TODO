@@ -16,6 +16,18 @@ const passport = require('passport');
 const passportLocal = require('./config/passport-local-strategy');
 const MongoStore = require('connect-mongo')(session);
 
+// adding sass module
+const sassMiddleware = require('node-sass-middleware');
+
+//it should be load when in development only not in production mode
+    app.use(sassMiddleware({
+        src: './assets/scss',
+        dest: './assets/css',
+        debug: true,
+        outputStyle: 'expanded',
+        prefix: '/css'
+    }));
+
 // use for adding layout which installed by npm install express-ejs-layouts
 const expresslayouts = require('express-ejs-layouts');
 app.use(expresslayouts);

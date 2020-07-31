@@ -10,7 +10,7 @@ router.use(express.urlencoded({extended: false}));
 router.get('/',passport.checkAuthentication ,eventController.home);
 
 // this is the route for delete button
-router.post('/delete-contact',passport.checkAuthentication,eventController.delete_data);
+router.post('/delete-event',passport.checkAuthentication,eventController.delete_data);
 
 // this is the route for addbutton
 router.post('/create-event',passport.checkAuthentication,eventController.add_data);

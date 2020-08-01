@@ -20,4 +20,9 @@ router.get('/auth/google/callback',passport.authenticate('google',{failureRedire
 router.get('/auth/facebook',passport.authenticate('facebook', {scope: ['profile', 'email']}));
 router.get('/auth/facebook/callback',passport.authenticate('facebook',{failureRedirect: '/user/sign-in'}),userController.createSession);
 
+
+//facebook aouth routes
+router.get('/auth/github',passport.authenticate('github', {scope: ['profile', 'email']}));
+router.get('/auth/github/callback',passport.authenticate('github',{failureRedirect: '/user/sign-in'}),userController.createSession);
+
 module.exports = router;

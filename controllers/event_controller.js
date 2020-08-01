@@ -3,7 +3,7 @@ const Event = require('../models/events');
 
 // controller for home 
 module.exports.home = function(req,res){
-       Event.find({},function(err,event){
+       Event.find({user: req.user._id},function(err,event){
         if(err)
         {
             console.log('Error in fetching events from DB');
@@ -21,7 +21,8 @@ module.exports.add_data = function(req,res){
     Event.create({
         description: req.body.description,
         category: req.body.category,
-        date: req.body.date
+        date: req.body.date,
+        user: req.user._id
     },function(err,newEvent){
         if(err)
         {

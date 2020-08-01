@@ -1,17 +1,43 @@
-<form action="/user/create-session" method="POST">
-    <input type="email" name="email" id="" placeholder="example@mail.com" required>
-    <input type="password" name="password" id="" placeholder="Enter Password" required>
-    <input type="submit" value="Sign In">
-</form>
 
-<p>
-    <a href="/user/auth/google" target="_blank">Google Sign In/Sign Up</a>
-</p>
+	
+	<link rel="stylesheet" type="text/css" href="/css/sign-in.css">
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
 
-<p>
-    <a href="/user/auth/facebook" target="_blank">Facebook Sign In/Sign Up</a>
-</p>
-
-<p>
-    <a href="/user/auth/github" target="_blank">Github Sign In/Sign Up</a>
-</p>
+	<img class="wave" src="/images/wave.png">
+	<div class="container">
+		<div class="img">
+			<img src="/images/bg.svg">
+		</div>
+		<div class="login-content">
+			<form action="/user/create-session" method="POST">
+				<img src="/images/avatar.svg">
+				<h2 class="title">Welcome</h2>
+           		<div class="input-div one">
+           		   <div class="i">
+           		   		<i class="fas fa-user"></i>
+           		   </div>
+           		   <div class="div">
+						<h5>Email</h5>
+						<input class="input" type="email" name="email" required>
+           		   </div>
+           		</div>
+           		<div class="input-div pass">
+           		   <div class="i"> 
+           		    	<i class="fas fa-lock"></i>
+           		   </div>
+           		   <div class="div">
+						<h5>Password</h5>
+						<input class="input" type="password" name="password" required>
+            	   </div>
+            	</div>
+				<a href="#">Forgot Password?</a>
+				<a href="/user/sign-up">Don't have an account?</a>
+            	<input type="submit" class="btn" value="Sign in">
+            </form>
+		</div>
+		<a href="/user/auth/google" target="_blank">Google Sign In/Sign Up</a>
+		<a href="/user/auth/github" target="_blank">Github Sign In/Sign Up</a>
+		<a href="/user/auth/facebook" target="_blank">Facebook Sign In/Sign Up</a>
+    </div>
+    <script type="text/javascript" src="/js/sign-in.js"></script>

@@ -46,23 +46,5 @@ module.exports.delete_data = function(req,res){
             return;
         }
    })
-    //if user has to delete only one event
-    // if(typeof(id)=='string'){
-    //     Event.findByIdAndDelete(id,function(err){
-    //             console.log(id);
-    //     });
-    // }
-     //if user has to delete multiple events simultaneously
-    // else{
-    //     for(i in id){
-    //             Event.findByIdAndDelete(id[i],function(err){
-    //             if(err)
-    //             {
-    //                 console.log('Error in deleting the event from database');
-    //                 return;
-    //             }
-    //         });
-    //     }
-    // }
     return res.redirect('back');
 }

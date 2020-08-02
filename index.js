@@ -18,6 +18,8 @@ const passportgoogleoath = require('./config/passport-google-oauth2-strategy');
 const passportfacebook = require('./config/passport-facebook-strategy');
 const passportgithub = require('./config/passport-github-strategy');
 const MongoStore = require('connect-mongo')(session);
+const flash = require('connect-flash');
+const flashmiddleware = require('./config/flash-middleware');
 
 // adding sass module
 const sassMiddleware = require('node-sass-middleware');
@@ -72,6 +74,8 @@ app.use(passport.session());
 
 app.use(passport.setAuthenticatedUser);
 
+app.use(flash());
+app.use(flashmiddleware.setFlash);
 //use express router
 app.use('/', require('./routes'));
 

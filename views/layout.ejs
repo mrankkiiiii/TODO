@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <%= title%></title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+  
     <link rel="stylesheet" type="text/css" href="/css/layout.css">
     <!-- this is for external style -->
     <%- style %>
@@ -12,7 +13,11 @@
 <body>
     <!-- This include the headers section to the page -->
     <%- include('_header');%>
-    
+    <% if(flash.success && flash.success.length > 0) { %>
+        <h5>
+            <%=flash.success%>
+        </h5>
+    <%}%>
     <!-- This include the body section to the page -->
         <%- body %>
 

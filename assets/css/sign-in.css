@@ -1,12 +1,7 @@
-* {
+body * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-body {
-  font-family: 'Poppins', sans-serif;
-  overflow: hidden;
 }
 
 .wave {
@@ -18,47 +13,36 @@ body {
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 7rem;
   padding: 0 2rem;
 }
 
-.img {
+.container .img {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-.login-content {
+.container #bgimg {
+  width: 500px;
+}
+
+.container .login-content {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   text-align: center;
+  position: relative;
+  left: 15%;
 }
 
-.img img {
-  width: 500px;
-}
-
-form {
-  width: 360px;
-}
-
-.login-content img {
+.container #avatar {
   height: 100px;
 }
 
-.login-content h2 {
-  margin: 15px 0;
-  color: #333;
-  text-transform: uppercase;
-  font-size: 2.9rem;
-}
-
-.login-content .input-div {
+.container .input-div {
   position: relative;
   display: grid;
   grid-template-columns: 7% 93%;
@@ -67,27 +51,12 @@ form {
   border-bottom: 2px solid #d9d9d9;
 }
 
-.login-content .input-div.one {
-  margin-top: 0;
-}
-
-.i {
-  color: #d9d9d9;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.i i {
-  transition: .3s;
-}
-
-.input-div > div {
+.container .input-div > div {
   position: relative;
   height: 45px;
 }
 
-.input-div > div > h5 {
+.container .input-div > div > h5 {
   position: absolute;
   left: 10px;
   top: 50%;
@@ -97,7 +66,7 @@ form {
   transition: .3s;
 }
 
-.input-div:before, .input-div:after {
+.container .input-div:before, .container .input-div:after {
   content: '';
   position: absolute;
   bottom: -2px;
@@ -107,28 +76,28 @@ form {
   transition: .4s;
 }
 
-.input-div:before {
+.container .input-div:before {
   right: 50%;
 }
 
-.input-div:after {
+.container .input-div:after {
   left: 50%;
 }
 
-.input-div.focus:before, .input-div.focus:after {
+.container .input-div.focus:before, .container .input-div.focus:after {
   width: 50%;
 }
 
-.input-div.focus > div > h5 {
+.container .input-div.focus > div > h5 {
   top: -5px;
   font-size: 15px;
 }
 
-.input-div.focus > .i > i {
+.container .input-div.focus > .i > i {
   color: #38d39f;
 }
 
-.input-div > div > input {
+.container .input-div > div > input {
   position: absolute;
   left: 0;
   top: 0;
@@ -143,24 +112,36 @@ form {
   font-family: 'poppins', sans-serif;
 }
 
-.input-div.pass {
+.container .input-div.pass {
   margin-bottom: 4px;
 }
 
-a {
-  display: block;
-  text-align: right;
-  text-decoration: none;
-  color: #999;
-  font-size: 0.9rem;
+.container .one {
+  margin-top: 0;
+}
+
+.container h2 {
+  color: #333;
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.container .form {
+  width: 360px;
+}
+
+.container .i {
+  color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container i {
   transition: .3s;
 }
 
-a:hover {
-  color: #38d39f;
-}
-
-.btn {
+.container .btn {
   display: block;
   width: 100%;
   height: 50px;
@@ -178,8 +159,26 @@ a:hover {
   transition: .5s;
 }
 
-.btn:hover {
+.container .btn:hover {
   background-position: right;
+}
+
+.container .link a {
+  display: block;
+  text-align: right;
+  color: #999;
+  font-size: 0.9rem;
+  transition: .3s;
+}
+
+.container .link a:hover {
+  color: #38d39f;
+}
+
+.container .social {
+  width: 40px;
+  height: 40px;
+  margin-right: 5%;
 }
 
 @media screen and (max-width: 1050px) {

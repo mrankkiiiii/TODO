@@ -1,0 +1,26 @@
+.flex{
+    display: flex;
+}
+header{
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: 900;
+    height: 12vh;
+    background: transparent;
+    img{
+        height: 70px;
+        width: 80px;
+    }
+    #logo{
+        position: relative;
+        left: 7%;
+    }
+    li{
+        padding-right: 10px;
+        list-style-type: none;
+    }   
+    .navigation{
+        position:relative;
+        left: 60%;
+    }
+}

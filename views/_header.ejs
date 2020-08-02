@@ -1,16 +1,29 @@
-<header>
-   <div id="logo">
-       <a href="/">Todo</a>
-   </div>
-   <div class="navigation">
+<link rel="stylesheet" type="text/css" href="/css/header.css">
+<header class="flex">
+        <ul id="logo">
+            <li>
+                <a href="/"><img src="/images/todo.png" alt="Todo Logo"></a>
+            </li>
+        </ul>
+   <div class="navigation headerLink">
        <%if(locals.user){%>
-               <a href="/user/profile/<%= user.id%>"><%=user.name%></a>
-               <a href="/user/sign-out">Sign Out</a>
-
+        <ul class="flex username">
+            <li>
+                <a href="/user/profile/<%= user.id%>"><%=user.name%></a>
+            </li>
+            <li>
+                <a href="/user/sign-out">Sign Out</a>
+            </li>
+        </ul>
            <%} else {%>
-                   <a href="/user/sign-in">Sign In</a>
-                   <a href="/user/sign-up">Sign Up</a>
-           <%}%>
+            <ul class="flex">
+                <li>
+                    <a href="/user/sign-in">Sign In</a>
+                </li>
+                <li>
+                    <a href="/user/sign-up">Sign Up</a>
+                </li>
+            </ul>
+        <%}%>
    </div>
-
 </header>

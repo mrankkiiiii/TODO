@@ -1,0 +1,16 @@
+body{
+	margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+}
+a{
+    color: #29cc94;
+    transition: 0.3s;
+    text-decoration: none;
+}
+.headerLink a:hover{
+    color: white;
+    background-color: rgb(68, 139, 156);
+    transition-timing-function: ease-in-out; 
+    border-radius: 10px;
+}

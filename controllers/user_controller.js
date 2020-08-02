@@ -15,7 +15,7 @@ module.exports.signin = function(req,res){
         return res.redirect('/event');
     }
     return res.render('sign_in',{
-        title: "Sign In"
+        title: "Todo App"
     })
 }
 

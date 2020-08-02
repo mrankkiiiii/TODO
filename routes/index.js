@@ -3,9 +3,9 @@ const express = require('express');
 const router = express.Router();
 const passport = require('passport');
 // it is used to connect with homecontroller
-const homeController = require('../controllers/home_controller');
+const userController = require('../controllers/user_controller');
 
-router.get('/',passport.checkAuthentication, homeController.home);
+router.get('/',passport.checkAuthentication, userController.signin);
 router.use('/user', require('./user'));
 router.use('/event', require('./event'));
 

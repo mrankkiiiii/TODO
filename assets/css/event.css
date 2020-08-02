@@ -1,18 +1,13 @@
 body {
-  font-weight: 900;
-  letter-spacing: 0.1rem;
-  margin-top: 30px;
-  background-color: grey;
-}
-
-body i {
-  padding-right: 10px;
+  background-image: url("/images/eventbg.jpg");
+  background-size: 100%;
+  background-attachment: fixed;
 }
 
 /* common class for padding and bottom border */
 .brdr {
   border-radius: 5px;
-  padding: 2px 0px 0px 15px;
+  padding: 15px 0px 0px 15px;
   border-bottom: 1px solid grey;
   height: 57px;
 }
@@ -26,16 +21,22 @@ body i {
 } */
 /* This is the main todo Section */
 #todo {
-  width: 600px;
+  width: 660px;
   background-color: white;
   margin: auto;
   border-radius: 10px;
   box-shadow: 0px 0px 12px 10px darkgray;
   border: 1px solid firebrick;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  /* Main heading of the todo  */
 }
 
-/* Main heading of the todo  */
-#heading {
+#todo i {
+  padding-right: 10px;
+}
+
+#todo #heading {
   color: white;
   text-align: center;
   border-bottom: 1px solid grey;
@@ -44,7 +45,7 @@ body i {
   border-radius: 8px;
 }
 
-#heading h1 {
+#todo #heading h1 {
   margin-top: 0;
   padding-top: 10px;
   height: 30px;
@@ -86,7 +87,7 @@ body i {
   display: inline-block;
   position: absolute;
   opacity: 0.8;
-  width: 270px;
+  width: 300px;
 }
 
 .date input {
@@ -128,7 +129,7 @@ body i {
 .delete-button {
   position: absolute;
   background-color: orangered;
-  top: 233px;
+  top: 315px;
   left: 50%;
 }
 
@@ -141,7 +142,7 @@ body i {
   overflow-y: scroll;
   padding: 0px 20px 15px 15px;
   margin-top: 0px;
-  max-height: 475px;
+  max-height: 304px;
 }
 
 .events-list .date-display {
@@ -176,7 +177,7 @@ body i {
   position: absolute;
   left: 75%;
   padding: 10px;
-  width: 85px;
+  width: 90px;
   font-size: 1.3rem;
   font-weight: 100;
   text-align: center;

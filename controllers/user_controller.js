@@ -12,7 +12,6 @@ module.exports.profile = function(req , res){
 module.exports.signin = function(req,res){
     if(req.isAuthenticated())
     {
-        req.flash('error', 'Error in fetching events');
         return res.redirect('/event');
     }
     return res.render('sign_in',{
@@ -56,6 +55,19 @@ module.exports.create = function(req,res){
             return res.redirect('back');
         }
     });
+}
+module.exports.update = async function(req,res){
+    if(req.user.id == req.params.id){
+        User.findByIdAndUpdate(req.params.id , req.body, function(err,user){
+            req.flash('warning','Profile Updated');
+            return res.redirect('back');
+        });
+    }
+    else
+    {
+        req.flash('error', 'Unauthorized!');
+        return res.status(401).send('Unauthorized');
+    }
 }
 
 module.exports.createSession = function(req,res){

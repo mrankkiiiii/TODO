@@ -47,7 +47,8 @@ app.set('views','./views')
 
 //for static css
 app.use(express.static('./assets'));
-
+//make the uploads path available to the browser
+app.use('/uploads',express.static(__dirname + '/uploads'));
 
 //mongo store is used to store the session cookie in the db
 app.use(session({

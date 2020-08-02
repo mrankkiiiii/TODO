@@ -16,7 +16,6 @@ passport.use(new facebookStrategy({
                 console.log('error in facebook-stratgey-passport',err);
                 return;
             }
-            console.log(profile);
             if(user){
                 //if found this,then set this user is as req.user
                 return done(null, user);

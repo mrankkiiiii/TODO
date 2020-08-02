@@ -34,18 +34,40 @@
                 layout: 'topRight',
                 timeout: 1500
             }).show();
-        <% } %>
+    <% } %>
 
         <% if(flash.error && flash.error.length > 0) {  %>
         
             new Noty({
-                theme: 'relax',
+                theme: 'metroui',
                 text: '<%=flash.error%>',
                 type: 'error',
-                layout: 'topRight',
+                layout: 'topCenter',
                 timeout: 1500
             }).show();
-        <%} %>
+    <%} %>
+
+        <% if(flash.alert && flash.alert.length > 0) {  %>
+        
+        new Noty({
+            theme: 'nest',
+            text: '<%=flash.alert%>',
+            type: 'alert',
+            layout: 'topCenter',
+            timeout: 1500
+        }).show();
+    <%} %>
+
+    <% if(flash.warning && flash.warning.length > 0) {  %>
+        
+        new Noty({
+            theme: 'metroui',
+            text: '<%=flash.warning%>',
+            type: 'warning',
+            layout: 'topCenter',
+            timeout: 1500
+        }).show();
+    <%} %>
     </script>
     <script type="text/javascript" src="/js/script.js"></script>
 </body>

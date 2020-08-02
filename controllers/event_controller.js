@@ -6,14 +6,14 @@ module.exports.home = function(req,res){
        Event.find({user: req.user._id},function(err,event){
         if(err)
         {
-            console.log('Error in fetching events from DB');
+            req.flash('error', 'Error in fetching events');
             return;
         }
         return res.render('event',{
             title: "Todo App",
             event_List: event
         });
-   });
+   }).sort('-createdAt');
 }
 
 //for adding a event in DB
@@ -29,12 +29,12 @@ module.exports.add_data = function(req,res){
             console.log('Error in creating a event!');
             return;
         }
-        console.log('*********',newEvent);
+        req.flash('alert', newEvent.description + ' - Event successfully added');
         return res.redirect('back');
     });
 }
 
-// //for deleting a event from DB
+//for deleting a event from DB
 module.exports.delete_data = function(req,res){
     //get the id from the query in the URL
     let id = req.body.check;
@@ -46,5 +46,6 @@ module.exports.delete_data = function(req,res){
             return;
         }
    })
+    req.flash('alert', 'Event(s) successfully deleted');
     return res.redirect('back');
 }

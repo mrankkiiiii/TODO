@@ -16,7 +16,6 @@ passport.use(new GitHubStrategy({
                 console.log('error in github-stratgey-passport',err);
                 return;
             }
-            console.log(profile);
             if(user){
                 //if found this,then set this user is as req.user
                 return done(null, user);

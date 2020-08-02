@@ -13,6 +13,5 @@ db.on('err',console.error.bind(console,'Error connecting with database'));
 //connect successgully
 db.once('open',function(){
     console.log("Successfully connected with Database");
-
 });
 module.exports = db;

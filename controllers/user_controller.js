@@ -12,6 +12,7 @@ module.exports.profile = function(req , res){
 module.exports.signin = function(req,res){
     if(req.isAuthenticated())
     {
+        req.flash('error', 'Error in fetching events');
         return res.redirect('/event');
     }
     return res.render('sign_in',{
@@ -31,38 +32,41 @@ module.exports.signup = function(req,res){
 
 module.exports.create = function(req,res){
     if(req.body.password!=req.body.confirm_password){
-       // req.flash('error', 'Passwords do not match');
+       req.flash('error', 'Passwords do not match!');
         return res.redirect('back');
     }
     User.findOne({email: req.body.email},function(err,user){
         //Error in finding user in signing up 
         if(err){
-            //req.flash('error',err); 
+            req.flash('error',err); 
             return; }
         if(!user){
             User.create(req.body, function(err,user){
                 //Error in creating user while signing up
-                if(err){//req.flash('error',err);
-                return; }
-                // req.flash('success', 'You have signed up, login to continue!');
+                if(err){
+                    req.flash('error',err);
+                return; 
+            }
+                req.flash('warning', 'You have signed up, login to continue!');
                 return res.redirect('/user/sign-in');
             });
         }
         else{
-            // req.flash('error', 'Email is already registered!');
+            req.flash('error', 'Email is already registered!');
             return res.redirect('back');
         }
     });
 }
 
 module.exports.createSession = function(req,res){
-    req.flash('success', 'Logged in Successfully');
+    req.flash('success', 'Welcome ',req.user.name,'You Logged In Successfully');
     return res.redirect('/event');
 }
 
 // for the signout
 module.exports.destroySession = function(req,res){  
+    let name = req.user.name;
     req.logout();
-    req.flash('success', ' You have Logged out');
-    return res.redirect('/');
+    req.flash('warning', `You have Logged out, Have a Nice Day ${name} :)`);
+    return res.redirect('/user/sign-in');
 }

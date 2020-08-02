@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <%= title%></title>
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
-  
+    <!-- noty css and js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
     <link rel="stylesheet" type="text/css" href="/css/layout.css">
     <!-- this is for external style -->
     <%- style %>
@@ -13,11 +15,7 @@
 <body>
     <!-- This include the headers section to the page -->
     <%- include('_header');%>
-    <% if(flash.success && flash.success.length > 0) { %>
-        <h5>
-            <%=flash.success%>
-        </h5>
-    <%}%>
+    
     <!-- This include the body section to the page -->
         <%- body %>
 
@@ -26,6 +24,29 @@
 
     <!-- this is for external script -->
     <%- script %>
+    <script>
+        <% if(flash.success && flash.success.length > 0) {  %>
+        
+            new Noty({
+                theme: 'sunset',
+                text: '<%=flash.success%>',
+                type: 'success',
+                layout: 'topRight',
+                timeout: 1500
+            }).show();
+        <% } %>
+
+        <% if(flash.error && flash.error.length > 0) {  %>
+        
+            new Noty({
+                theme: 'relax',
+                text: '<%=flash.error%>',
+                type: 'error',
+                layout: 'topRight',
+                timeout: 1500
+            }).show();
+        <%} %>
+    </script>
     <script type="text/javascript" src="/js/script.js"></script>
 </body>
 </html>

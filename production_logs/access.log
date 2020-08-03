@@ -7,3 +7,8 @@
 [0mGET /user/sign-in [32m200[0m 7.211 ms - 3824[0m
 [0mPOST /user/create-session [36m302[0m 10.130 ms - 56[0m
 [0mGET /event [32m200[0m 8.990 ms - 5126[0m
+::1 - - [03/Aug/2020:16:56:28 +0000] "GET /event HTTP/1.1" 302 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [03/Aug/2020:16:56:28 +0000] "GET /user/sign-in HTTP/1.1" 200 3570 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [03/Aug/2020:16:56:30 +0000] "GET /user/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+[0mGET /user/sign-in [36m304[0m 33.245 ms - -[0m
+::1 - - [03/Aug/2020:16:59:26 +0000] "GET /user/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"

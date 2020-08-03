@@ -3,12 +3,12 @@ const GitHubStrategy = require('passport-github').Strategy;
 // to generate random password
 const crypto = require('crypto');
 const User = require('../models/user');
-// const env = require('./environment');
+const env = require('./environment');
 //tell passport to use new strategy for google login
 passport.use(new GitHubStrategy({
-        clientID: "fd1ffee9ac93b0aa1d8a",
-        clientSecret: "56d754e59d1e7325d3e7de40a19be96b3c8f9d6e",
-        callbackURL: "http://localhost:8000/user/auth/github/callback"
+        clientID: env.github_client_id,
+        clientSecret: env.github_client_secret,
+        callbackURL: env.github_callback_url
     }, function(accessToken, refreshToken, profile, done){
         //find a user
         User.findOne({email: profile.emails[0].value}).exec(function(err,user){

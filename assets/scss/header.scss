@@ -7,6 +7,11 @@ header{
     font-weight: 900;
     height: 12vh;
     background: transparent;
+    #userphoto img{
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+    }
     img{
         height: 70px;
         width: 80px;

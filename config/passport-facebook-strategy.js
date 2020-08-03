@@ -3,12 +3,12 @@ const facebookStrategy = require('passport-facebook').Strategy;
 // to generate random password
 const crypto = require('crypto');
 const User = require('../models/user');
-// const env = require('./environment');
+const env = require('./environment');
 //tell passport to use new strategy for google login
 passport.use(new facebookStrategy({
-        clientID: "326669651806473",
-        clientSecret: "0d09e2e046eb0b17dcf3efa334499142",
-        callbackURL: "http://localhost:8000/user/auth/facebook/callback"
+        clientID: env.facebook_client_id,
+        clientSecret: env.facebook_client_secret,
+        callbackURL: env.facebook_callback_url
     }, function(accessToken, refreshToken, profile, done){
         //find a user
         User.findOne({email: profile.emails[0].value}).exec(function(err,user){

@@ -10,6 +10,12 @@ header {
   background: transparent;
 }
 
+header #userphoto img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+
 header img {
   height: 70px;
   width: 80px;

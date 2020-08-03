@@ -1,0 +1,9 @@
+::1 - - [03/Aug/2020:16:32:24 +0000] "GET /user/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+[0mGET /user/sign-in [36m304[0m 29.875 ms - -[0m
+[0mGET /user/auth/google [36m302[0m 13.873 ms - 0[0m
+[0mGET /user/auth/google/callback?code=4%2F2gE4AD6C2otld-YaZKutXCPshWNuKY2Sijin0V-vono52sMX3NrjxDF5C9FH7mdGQ3tSv2d5qyTLmZe2G-5vsHE&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none [36m302[0m 1091.683 ms - 56[0m
+[0mGET /event [36m304[0m 44.330 ms - -[0m
+[0mGET /user/sign-out [36m302[0m 8.763 ms - 70[0m
+[0mGET /user/sign-in [32m200[0m 7.211 ms - 3824[0m
+[0mPOST /user/create-session [36m302[0m 10.130 ms - 56[0m
+[0mGET /event [32m200[0m 8.990 ms - 5126[0m

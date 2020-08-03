@@ -5,18 +5,21 @@
                 <a href="/"><img src="/images/todo.png" alt="Todo Logo"></a>
             </li>
         </ul>
-   <div class="navigation headerLink">
+   <div class="navigation">
        <%if(locals.user){%>
         <ul class="flex username">
-            <li>
+            <li id="userphoto">
+                <a href="/user/profile/<%= user.id%>"> <img src="<%=user.avatar%>" alt="user profile picture"> </a>
+            </li>
+            <li class="headerLink">
                 <a href="/user/profile/<%= user.id%>"><%=user.name%></a>
             </li>
-            <li>
+            <li class="headerLink">
                 <a href="/user/sign-out">Sign Out</a>
             </li>
         </ul>
            <%} else {%>
-            <ul class="flex">
+            <ul class="flex headerLink">
                 <li>
                     <a href="/user/sign-in">Sign In</a>
                 </li>

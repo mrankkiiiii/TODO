@@ -1,15 +1,15 @@
-	<link rel="stylesheet" type="text/css" href="/css/sign-in.css">
+	<link rel="stylesheet" type="text/css" href="<%= assetPath('css/sign-in.css') %>">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
-	<script src="https://kit.fontawesome.com/a81368914c.js"></script>
+	<script src="https://kit.fontawesome.com/de71e220d0.js" crossorigin="anonymous"></script>
 
-	<img class="wave" src="/images/wave.png" alt="Design">
+	<img class="wave" src="<%= assetPath('images/wave.png') %>" alt="Design">
 	<div class="container">
 		<div class="img">
-			<img id="bgimg" src="/images/bg.svg" alt="Design">
+			<img id="bgimg" src="<%= assetPath('images/bg.svg') %>" alt="Design">
 		</div>
 		<div class="login-content">
 			<form class="form" action="/user/create-session" method="POST">
-				<img id="avatar" src="/images/avatar.svg">
+				<img id="avatar" src="<%= assetPath('images/avatar.svg') %>" alt="avatar">
 				<h2 class="title">Welcome</h2>
            		<div class="input-div one">
            		   <div class="i">
@@ -32,10 +32,10 @@
 				<span class="link"><a href="#">Forgot Password?</a></span>
 				<span class="link"><a href="/user/sign-up">Don't have an account?</a></span>
 				<input type="submit" class="btn" value="Sign in">
-				<span title="Google"><a href="/user/auth/google"><img class="social" src="/images/google.png" alt="Google Login"></a></span>
-				<span title="Github"><a href="/user/auth/github"><img class="social" src="/images/github.png" alt="Github Login"></a></span>
-				<span title="Facebook"><a href="/user/auth/facebook"><img class="social" src="/images/facebook.png" alt="Facebook Login"></a></span>
+				<span title="Google"><a href="/user/auth/google"><img class="social" src="<%= assetPath('images/google.png') %>" alt="Google Login"></a></span>
+				<span title="Github"><a href="/user/auth/github"><img class="social" src="<%= assetPath('images/github.png') %>" alt="Github Login"></a></span>
+				<span title="Facebook"><a href="/user/auth/facebook"><img class="social" src="<%= assetPath('images/facebook.png') %>" alt="Facebook Login"></a></span>
             </form>
 		</div>
     </div>
-    <script type="text/javascript" src="/js/sign-in.js"></script>
+    <script type="text/javascript" src="<%= assetPath('js/sign-in.js') %>" ></script>

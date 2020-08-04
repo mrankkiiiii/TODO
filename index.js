@@ -4,7 +4,7 @@ const logger = require('morgan');
 const cookieParser = require('cookie-parser');
 const app = express();
 const port = 8000;
-
+require('./config/view-helpers')(app);
 // app.use is middleware which is used to passed the form data using express
 app.use(express.urlencoded({extended: false}));
 

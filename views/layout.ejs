@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> <%= title%></title>
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="<%= assetPath('images/favicon.ico') %>" type="image/x-icon">
     <!-- noty css and js -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="/css/layout.css">
+    <link rel="stylesheet" type="text/css" href="<%= assetPath('css/layout.css') %>">
     <!-- this is for external style -->
     <%- style %>
 </head>
@@ -69,6 +69,6 @@
         }).show();
     <%} %>
     </script>
-    <script type="text/javascript" src="/js/script.js"></script>
+    <script type="text/javascript" src="<%= assetPath('js/script.js') %>"></script>
 </body>
 </html>

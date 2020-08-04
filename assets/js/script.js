@@ -2,7 +2,7 @@
 let allList = document.getElementsByClassName('container');
 for(let i=0; i<allList.length; i++){
     // setting the background color as per the category
-      console.log(allList[i].querySelector(".category-tab").innerText);
+    //   console.log(allList[i].querySelector(".category-tab").innerText);
       if(allList[i].querySelector(".category-tab").innerText == "Personal"){
           allList[i].querySelector(".category-tab").style.backgroundColor = "rgb(247, 132, 0)";
       }

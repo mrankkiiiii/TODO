@@ -10,7 +10,8 @@ const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
 
 const del = require('del');
-
+const { series } = require('gulp');
+const { parallel } = require('gulp');
 
 gulp.task('css', function(done){
     console.log('minifying css');
@@ -50,7 +51,7 @@ gulp.task('js', function(done){
 gulp.task('images', function(done){
     console.log('compressing images');
     //double start any folder and single start for any file
-    gulp.src('./assets/**/*.+(png|jpg|gif|svg|jpeg)')
+    gulp.src('./assets/**/*.+(png|jpg|gif|svg|jpeg|ico)')
     .pipe(imagemin())
     .pipe(rev())
     .pipe(gulp.dest('./public/assets'))
@@ -69,8 +70,8 @@ gulp.task('clean:assets',function(done){
     done();
 });
 
-// to run all above 4 tasks independently
+//to run all above 4 tasks independently
 gulp.task('build', gulp.series('clean:assets','css','js','images'), function(done){
     console.log('Building assets');
-    done();
+    done;
 });

@@ -351,3 +351,124 @@
 ::1 - - [05/Aug/2020:17:49:16 +0000] "GET /user/sign-out HTTP/1.1" 302 70 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
 ::1 - - [05/Aug/2020:17:49:16 +0000] "GET /user/sign-in HTTP/1.1" 200 4009 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
 ::1 - - [05/Aug/2020:17:49:18 +0000] "GET /user/auth/facebook HTTP/1.1" 302 0 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:32:15 +0000] "GET / HTTP/1.1" 302 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:32:15 +0000] "GET /user/sign-in HTTP/1.1" 200 3755 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:32:18 +0000] "GET /user/auth/github HTTP/1.1" 302 0 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:32:24 +0000] "GET /user/auth/google HTTP/1.1" 302 0 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:32:25 +0000] "GET /user/auth/google/callback?code=4%2F2gGEdH8g8yIqECiKkN9xYkDrGXtm8EgAFyPhAc_oN3zOVrH1GgUxiOZU81YhBv00Oft9GJn5caXOUQIFk2oC0_0&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none HTTP/1.1" 302 56 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:32:25 +0000] "GET /event HTTP/1.1" 304 - "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:32:26 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:33:46 +0000] "GET /event HTTP/1.1" 200 4436 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:33:46 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+[0mGET /event [36m302[0m 26.230 ms - 70[0m
+[0mGET /user/sign-in [32m200[0m 33.933 ms - 3612[0m
+[0mGET /user/auth/google [36m302[0m 4.568 ms - 0[0m
+[0mGET /user/auth/google/callback?code=4%2F2gHlusydEmWyOQu4RQr306NUeJafiSB3Fhq8H2vny6cyMTd2vjvT81BESBc1sEDYEx8If35VjJSGjCMJN9XHDUY&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none [36m302[0m 708.901 ms - 56[0m
+[0mGET /event [32m200[0m 14.643 ms - 5189[0m
+[0mGET /css/images/eventbg.jpg [33m404[0m 8.277 ms - 161[0m
+[0mGET /event [32m200[0m 44.585 ms - 4913[0m
+::1 - - [05/Aug/2020:18:37:08 +0000] "GET /event HTTP/1.1" 302 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:37:08 +0000] "GET /user/sign-in HTTP/1.1" 200 3755 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:37:10 +0000] "GET /user/auth/google HTTP/1.1" 302 0 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:37:12 +0000] "GET /user/auth/google/callback?code=4%2F2gFHl2uDGAImOZymWEUwpqj6ouCj3e5p0YTa_Pe9tGEVz6MNI-r6jUnCD0mdK2besi4yF_npXtP2T7h9EA1eQlw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none HTTP/1.1" 302 56 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:37:12 +0000] "GET /event HTTP/1.1" 200 4712 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:37:12 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:37:42 +0000] "GET /event HTTP/1.1" 200 4436 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:37:42 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:37:45 +0000] "GET /event HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:40:14 +0000] "GET /event HTTP/1.1" 200 4533 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Aug/2020:18:40:41 +0000] "GET /event HTTP/1.1" 200 4528 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::ffff:127.0.0.1 - - [05/Aug/2020:18:40:43 +0000] "GET /event HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:43:14 +0000] "GET /event HTTP/1.1" 200 4517 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:43:14 +0000] "GET /event HTTP/1.1" 304 - "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:43:55 +0000] "GET /event HTTP/1.1" 200 4515 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:43:55 +0000] "GET /event HTTP/1.1" 304 - "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:45:38 +0000] "GET /event HTTP/1.1" 200 4513 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:45:41 +0000] "GET /event HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:46:34 +0000] "GET /event HTTP/1.1" 200 4529 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:46:37 +0000] "GET /event HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:47:00 +0000] "POST /event/create-event HTTP/1.1" 302 98 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:47:00 +0000] "GET /event HTTP/1.1" 200 5268 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:47:08 +0000] "POST /event/delete-event HTTP/1.1" 302 98 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:47:08 +0000] "GET /event HTTP/1.1" 200 4754 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:18:51:49 +0000] "GET /event HTTP/1.1" 200 4436 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:02:22 +0000] "GET /event HTTP/1.1" 200 4534 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:02:22 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:03:03 +0000] "GET /event HTTP/1.1" 200 4539 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:03:03 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:03:04 +0000] "GET /event HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:03:04 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:03:43 +0000] "GET /event HTTP/1.1" 200 4538 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:03:43 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:04:22 +0000] "GET /event HTTP/1.1" 200 4536 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:04:22 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:04:24 +0000] "GET /event HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+[0mGET /user/profile/5f2af117f6bd3d3518ca4578 [36m302[0m 17.049 ms - 70[0m
+[0mGET /user/sign-in [32m200[0m 34.100 ms - 3612[0m
+[0mGET /user/auth/google [36m302[0m 9.578 ms - 0[0m
+[0mGET /user/auth/google/callback?code=4%2F2gHNNfxALVK_HFmTJDJqNzRA429HvApqk6RuIysxSc7Z5AA16a2KcIJBKxzmhtF-g4ohrejjryC2SVOEQFeuK9Q&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none [36m302[0m 758.993 ms - 56[0m
+[0mGET /event [32m200[0m 20.762 ms - 5189[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [32m200[0m 16.697 ms - 2809[0m
+[0mGET / [36m302[0m 5.501 ms - 56[0m
+[0mGET /event [32m200[0m 14.738 ms - 4913[0m
+[0mGET /event [36m304[0m 49.030 ms - -[0m
+::1 - - [05/Aug/2020:19:08:49 +0000] "GET /event HTTP/1.1" 302 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:08:49 +0000] "GET /user/sign-in HTTP/1.1" 200 3755 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:08:51 +0000] "GET /user/auth/google HTTP/1.1" 302 0 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:08:52 +0000] "GET /user/auth/google/callback?code=4%2F2wHZEurQ67ZrzUyhyFv8fUV-9bV73_J7AHuBBQT_VCaZBOF409r0psdi0Dabo8QUGQpnj_pUjGQoQUFZCag53sw&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile&authuser=0&prompt=none HTTP/1.1" 302 56 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:08:52 +0000] "GET /event HTTP/1.1" 200 4712 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:08:53 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:09:45 +0000] "GET /event HTTP/1.1" 200 4436 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:09:45 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:09:52 +0000] "GET /user/sign-out HTTP/1.1" 302 70 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:09:52 +0000] "GET /user/sign-in HTTP/1.1" 200 4009 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+[0mGET /user/sign-in [32m200[0m 30.575 ms - 3612[0m
+[0mGET /user/auth/google [36m302[0m 14.227 ms - 0[0m
+[0mGET /user/auth/google/callback?code=4%2F2gG8ChEwLvRJlRmzaIFfMRwtOGsxK9qyaWP_8aqiGjux3jobYUnkJjmORoP5k8okgApNF647_Xgi4_FIu3fSEDA&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none [0m-[0m - ms - -[0m
+[0mGET /user/auth/google [36m302[0m 4.174 ms - 0[0m
+[0mGET /user/auth/google/callback?code=4%2F2gF9BlwathIXnnVc55XriPw-4WRrCo4NkvlKAZgDahH9wpGCck-6ODl3xAbVOJkfrz_xHEV5Hg041ZQCbiAKIhc&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none [36m302[0m 1024.086 ms - 56[0m
+[0mGET /event [32m200[0m 19.387 ms - 5189[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [32m200[0m 10.100 ms - 3085[0m
+[0mGET / [36m302[0m 5.986 ms - 56[0m
+[0mGET /event [32m200[0m 7.552 ms - 4913[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [32m200[0m 7.921 ms - 2809[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [36m304[0m 9.261 ms - -[0m
+[0mGET / [36m302[0m 5.551 ms - 56[0m
+[0mGET /event [36m304[0m 9.584 ms - -[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [36m304[0m 7.829 ms - -[0m
+[0mGET / [36m302[0m 4.681 ms - 56[0m
+[0mGET /event [36m304[0m 7.585 ms - -[0m
+::1 - - [05/Aug/2020:19:12:09 +0000] "GET /event HTTP/1.1" 302 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:12:09 +0000] "GET /user/sign-in HTTP/1.1" 200 3755 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:12:11 +0000] "GET /user/auth/google HTTP/1.1" 302 0 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:12:13 +0000] "GET /user/auth/google/callback?code=4%2F2gHHcpYrYiKb08UAez7mztSzkr8NJDZGFCmnRJp1YoIGVa_77JMI_DYSd6LHLvnzg7rdoHc1qCg_8GebOHNSwUM&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none HTTP/1.1" 302 56 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:12:13 +0000] "GET /event HTTP/1.1" 200 4712 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:12:13 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:12:15 +0000] "GET /user/profile/5f2af117f6bd3d3518ca4578 HTTP/1.1" 200 2815 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:12:15 +0000] "GET /images/profilebg.jpg HTTP/1.1" 404 159 "http://localhost:8000/css/users_profile-d31e0a1574.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:12:22 +0000] "GET / HTTP/1.1" 302 56 "http://localhost:8000/user/profile/5f2af117f6bd3d3518ca4578" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:12:22 +0000] "GET /event HTTP/1.1" 200 4436 "http://localhost:8000/user/profile/5f2af117f6bd3d3518ca4578" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:12:22 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:15:09 +0000] "GET /event HTTP/1.1" 200 4436 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:16:51 +0000] "GET /event HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:19:17:03 +0000] "GET /event HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+[0mGET /event [36m302[0m 12.934 ms - 70[0m
+[0mGET /user/sign-in [32m200[0m 21.956 ms - 3612[0m
+[0mGET /user/auth/google [36m302[0m 8.023 ms - 0[0m
+[0mGET /user/auth/google/callback?code=4%2F2gGORjKjGteitfW7jQyDzgW5lgKhLQ6XFPNhSmIdDttZiz0r267pVFt4KPK-yIjo5diMxyKw62OX0N95wzK42N8&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none [36m302[0m 737.353 ms - 56[0m
+[0mGET /event [32m200[0m 16.974 ms - 5189[0m
+[0mGET /event [32m200[0m 16.076 ms - 4913[0m
+[0mGET /event [36m304[0m 12.519 ms - -[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [36m304[0m 15.175 ms - -[0m
+[0mGET / [36m302[0m 5.438 ms - 56[0m
+[0mGET /event [36m304[0m 14.565 ms - -[0m
+[0mGET / [36m302[0m 5.036 ms - 56[0m
+[0mGET /event [36m304[0m 14.693 ms - -[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [36m304[0m 13.276 ms - -[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [36m304[0m 10.465 ms - -[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [36m304[0m 12.269 ms - -[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [36m304[0m 8.599 ms - -[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [36m304[0m 8.634 ms - -[0m
+[0mGET / [36m302[0m 7.847 ms - 56[0m
+[0mGET /event [36m304[0m 15.674 ms - -[0m
+[0mGET /user/profile/5f26ffafdeda0c20c460f28c [36m304[0m 8.663 ms - -[0m

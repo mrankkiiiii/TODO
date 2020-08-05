@@ -10,8 +10,6 @@ const terser = require('gulp-terser');
 const imagemin = require('gulp-imagemin');
 
 const del = require('del');
-const { series } = require('gulp');
-const { parallel } = require('gulp');
 
 gulp.task('css', function(done){
     console.log('minifying css');
@@ -26,7 +24,7 @@ gulp.task('css', function(done){
     .pipe(gulp.dest('./public/assets'))
      //manifest use to store the map of original file to renaming files
     .pipe(rev.manifest({
-        cwd: 'public',
+        base: './public/assets',
         merge: true
     }))
     .pipe(gulp.dest('./public/assets'));
@@ -41,7 +39,7 @@ gulp.task('js', function(done){
     .pipe(rev())
     .pipe(gulp.dest('./public/assets'))
     .pipe(rev.manifest({
-        cwd: 'public',
+        base: './public/assets',
         merge: true
     }))
     .pipe(gulp.dest('./public/assets'));
@@ -55,9 +53,8 @@ gulp.task('images', function(done){
     .pipe(imagemin())
     .pipe(rev())
     .pipe(gulp.dest('./public/assets'))
-   
     .pipe(rev.manifest({
-        cwd: 'public',
+        base: './public/assets',
         merge: true
     }))
     .pipe(gulp.dest('./public/assets'));
@@ -73,5 +70,5 @@ gulp.task('clean:assets',function(done){
 //to run all above 4 tasks independently
 gulp.task('build', gulp.series('clean:assets','css','js','images'), function(done){
     console.log('Building assets');
-    done;
+    done();
 });

@@ -1,4 +1,9 @@
 {
+  "css/event.css": "css/event-64f4402635.css",
+  "css/header.css": "css/header-49b6cdae11.css",
+  "css/layout.css": "css/layout-93cff36f7b.css",
+  "css/sign-in.css": "css/sign-in-c42db6a436.css",
+  "css/users_profile.css": "css/users_profile-d31e0a1574.css",
   "images/avatar.svg": "images/avatar-bdafa409d2.svg",
   "images/bg.svg": "images/bg-e2c3d547fe.svg",
   "images/eventbg.jpg": "images/eventbg-c40409c1ca.jpg",
@@ -9,6 +14,6 @@
   "images/profilebg.jpg": "images/profilebg-03632ee45f.jpg",
   "images/todo.png": "images/todo-c154034a79.png",
   "images/wave.png": "images/wave-becf984669.png",
-  "js/script.js": "js/script-87f5c54e7f.js",
+  "js/script.js": "js/script-a4094949ce.js",
   "js/sign-in.js": "js/sign-in-e87a6f1e00.js"
 }

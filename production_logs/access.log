@@ -283,3 +283,71 @@
 ::1 - - [03/Aug/2020:19:19:48 +0000] "GET /user/sign-in HTTP/1.1" 200 3604 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
 ::1 - - [03/Aug/2020:19:19:48 +0000] "GET /js/script-87f5c54e7f.js HTTP/1.1" 404 162 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
 ::1 - - [03/Aug/2020:19:19:48 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+[0mGET /user/auth/google/callback?code=4%2F2gEQGXyWsnsc0ak6IMojIRTpJv-B4SQZfbVk9-nuVIbQ77tTpo3lpEJoRIfmsjuA7NDHawlOH3nNA59JZo3U-Mo&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none [36m302[0m 763.679 ms - 56[0m
+[0mGET /event [32m200[0m 39.901 ms - 4676[0m
+[0mGET /user/sign-out [36m302[0m 5.531 ms - 70[0m
+[0mGET /user/sign-in [32m200[0m 4.195 ms - 3866[0m
+[0mGET /user/auth/github [36m302[0m 4.993 ms - 0[0m
+[0mGET /user/auth/github [36m302[0m 3.138 ms - 0[0m
+[0mGET /user/auth/github/callback?code=3f39fb032f81a20d7b98 [36m302[0m 1545.620 ms - 56[0m
+[0mGET /event [36m304[0m 7.629 ms - -[0m
+[0mGET /user/sign-out [36m302[0m 6.402 ms - 70[0m
+[0mGET /user/sign-in [36m304[0m 2.730 ms - -[0m
+[0mGET /user/sign-in [32m200[0m 3.979 ms - 3612[0m
+[0mGET /user/sign-in [36m304[0m 4.534 ms - -[0m
+[0mGET /user/sign-in [36m304[0m 5.253 ms - -[0m
+[0mGET /user/sign-in [36m304[0m 2.778 ms - -[0m
+[0mGET /user/sign-in [36m304[0m 2.520 ms - -[0m
+[0mGET /user/auth/google [36m302[0m 4.173 ms - 0[0m
+[0mGET /user/auth/google/callback?code=4%2F2gGO0M2ctz5HjfWAUJwK9rlK6oa6QUQuDpQTggCt2P3U2L6Zad1CR1DXlu46LEHBMM6wgSMBV1HGH100Sd9onHM&scope=email+profile+openid+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email&authuser=0&prompt=none [36m302[0m 650.314 ms - 56[0m
+[0mGET /event [36m304[0m 7.803 ms - -[0m
+[0mGET /user/sign-out [36m302[0m 3.524 ms - 70[0m
+[0mGET /user/sign-in [32m200[0m 3.682 ms - 3866[0m
+[0mGET /user/auth/github [36m302[0m 4.036 ms - 0[0m
+[0mGET /user/auth/github/callback?code=0dda9dcd778dcb6da3cd [36m302[0m 1332.387 ms - 56[0m
+[0mGET /event [36m304[0m 5.322 ms - -[0m
+[0mPOST /event/create-event [36m302[0m 22.686 ms - 98[0m
+[0mGET /event [32m200[0m 7.868 ms - 5141[0m
+[0mGET /user/sign-out [36m302[0m 7.813 ms - 70[0m
+[0mGET /user/sign-in [36m304[0m 2.672 ms - -[0m
+[0mGET /user/sign-in [32m200[0m 4.334 ms - 3612[0m
+[0mGET /user/auth/google [36m302[0m 7.681 ms - 0[0m
+[0mGET /user/auth/google/callback?code=4%2F2gFd8sYMPdgQnc31kt3SSzo_Xc73doq5m1ByWQWN8TMNF0TY0aKTu6V3MwhEYVO4qPaUZ92OTeCw78D-X62p_bc&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+openid&authuser=0&prompt=none [36m302[0m 577.265 ms - 56[0m
+[0mGET /event [32m200[0m 7.200 ms - 5189[0m
+[0mGET /user/sign-out [36m302[0m 4.278 ms - 70[0m
+[0mGET /user/sign-in [32m200[0m 2.504 ms - 3866[0m
+[0mGET / [36m302[0m 2.451 ms - 70[0m
+[0mGET /user/sign-in [32m200[0m 5.538 ms - 3612[0m
+[0mGET /user/sign-in [36m304[0m 32.957 ms - -[0m
+[0mGET /user/sign-in [36m304[0m 41.792 ms - -[0m
+[0mGET /user/sign-in [36m304[0m 30.633 ms - -[0m
+::1 - - [04/Aug/2020:17:53:21 +0000] "GET /user/sign-in HTTP/1.1" 200 3706 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [04/Aug/2020:17:53:21 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [04/Aug/2020:17:53:21 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [04/Aug/2020:17:53:21 +0000] "GET /js/script-87f5c54e7f.js HTTP/1.1" 404 162 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [04/Aug/2020:17:53:22 +0000] "GET /js/script-87f5c54e7f.js HTTP/1.1" 404 162 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+[0mGET /user/sign-in [32m200[0m 31.603 ms - 3612[0m
+[0mGET /user/auth/google/callback?code=4%2F2gGe8s-aKVWH4Snqh3wbkF3fAUaozZHoDkv6ki_7Lg3DffWQxjyjhcF6p1jaRCWgiAu7IZyr8-Y2CDrFDtQk0_Y&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none [36m302[0m 765.810 ms - 56[0m
+[0mGET /event [36m304[0m 12.619 ms - -[0m
+[0mGET /user/sign-out [36m302[0m 5.997 ms - 70[0m
+[0mGET /user/sign-in [32m200[0m 4.977 ms - 3866[0m
+[0mGET /user/auth/google/callback?code=4%2F2gHDI4U-J3DW1RDuJHf2c47G30bGaHKcv37alNL9GTIALyx__hg3HxwkhIpBTd-IihNcFiS-MpqgX1rQNXiwBp0&scope=email+profile+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.email+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fuserinfo.profile+openid&authuser=0&prompt=none [36m302[0m 635.701 ms - 56[0m
+[0mGET /event [36m304[0m 7.252 ms - -[0m
+[0mGET /user/sign-out [36m302[0m 5.248 ms - 70[0m
+[0mGET /user/sign-in [36m304[0m 3.493 ms - -[0m
+::1 - - [05/Aug/2020:14:25:09 +0000] "GET / HTTP/1.1" 302 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:14:25:09 +0000] "GET /user/sign-in HTTP/1.1" 200 3726 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:14:25:09 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:14:25:15 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:14:25:15 +0000] "GET /undefined HTTP/1.1" 404 148 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:15:56:59 +0000] "GET / HTTP/1.1" 302 70 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:15:56:59 +0000] "GET /user/sign-in HTTP/1.1" 200 3755 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:15:57:27 +0000] "GET /user/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:15:57:31 +0000] "GET /user/sign-in HTTP/1.1" 304 - "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:17:41:47 +0000] "GET /user/sign-in HTTP/1.1" 200 3755 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:17:49:11 +0000] "GET /user/auth/github/callback?code=2cec1958a0e1d3ae76d9 HTTP/1.1" 302 56 "http://52.66.201.30:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:17:49:11 +0000] "GET /event HTTP/1.1" 200 4712 "http://52.66.201.30:8000/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:17:49:11 +0000] "GET /images/eventbg.jpg HTTP/1.1" 404 157 "http://localhost:8000/css/event-64f4402635.css" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:17:49:16 +0000] "GET /user/sign-out HTTP/1.1" 302 70 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:17:49:16 +0000] "GET /user/sign-in HTTP/1.1" 200 4009 "http://localhost:8000/event" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
+::1 - - [05/Aug/2020:17:49:18 +0000] "GET /user/auth/facebook HTTP/1.1" 302 0 "http://localhost:8000/user/sign-in" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36"
